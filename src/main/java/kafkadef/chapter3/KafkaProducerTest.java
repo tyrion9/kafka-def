@@ -22,9 +22,9 @@ public class KafkaProducerTest {
 
 		ProducerRecord<String, String> record = new ProducerRecord<>("test2", "Precision Products France");
 		try {
-			System.out.println("sending");
-			producer.send(record).get();
-			System.out.println("done");
+			for(int i = 0; i < 10; i++) {
+				producer.send(record).get();
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
