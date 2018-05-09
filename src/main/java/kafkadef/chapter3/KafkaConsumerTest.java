@@ -25,7 +25,7 @@ public class KafkaConsumerTest {
 		props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
 		
-		consumer.subscribe(Collections.singletonList("test2"));
+		consumer.subscribe(Collections.singletonList("hoaipn"));
 		
 		try {
 			Map<String, Integer> custCountryMap = new HashMap<>();

@@ -20,7 +20,7 @@ public class KafkaProducerTest {
 		kafkaProps.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		KafkaProducer producer = new KafkaProducer<String, String>(kafkaProps);
 
-		ProducerRecord<String, String> record = new ProducerRecord<>("test2", "Precision Products France");
+		ProducerRecord<String, String> record = new ProducerRecord<>("hoaipn", "Precision Products France");
 		try {
 			for(int i = 0; i < 10; i++) {
 				producer.send(record).get();
